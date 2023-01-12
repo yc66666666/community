@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增加学生</title>
+</head>
+<body>
+    <a ></a>
+    <form method="post" action="/community/alpha/student">
+        <!--
+            html中，表单和超链接的action和href中的路径加不加/的问题
+
+            不加/，默认就是当前student.html所在的路径，拼上上面的  也就是 http://localhost:8080/community/html/  拼上 community/alpha/student
+            加上/，就是 http://localhost:8080 拼上，上面的 /community/alpha/student
+        -->
+        <p>
+            姓名：<input type="text" name="name">
+        </p>
+        <p>
+            年龄：<input type="text" name="age">
+        </p>
+        <p>
+            <input type="submit" value="保存">
+        </p>
+    </form>
+</body>
+</html>
